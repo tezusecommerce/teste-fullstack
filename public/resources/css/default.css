@@ -1,0 +1,504 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+ins {
+    text-decoration: none;
+}
+del {
+    text-decoration: line-through;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*Base Styles*/
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    margin-bottom: 1%;
+}
+
+footer {
+    margin-top: 10%;
+    background-color:#ebecec;
+}
+
+/*For mobile devices*/
+@media screen and (max-width: 799px) {
+    .hide-mobile {
+        display: none;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;    
+    }
+    
+    .margins {
+        margin: 5%;
+    }
+
+    .topnav {
+        display: flex;
+    }
+
+    .haburger-menu {
+        display: inline;
+        font-size: 36px;
+        margin: 1% 0;
+        color: black;
+    }
+
+    .logo-madrejoy {
+        height: 3em;
+    }
+
+    .bag {
+        display: flex;
+        justify-content: center;
+        border-radius: 50%;
+        width: 3em;
+        height: 3em;
+        text-align: center;
+        align-items: center;
+        vertical-align: middle;
+        cursor: pointer;
+        background-color: #efd5d5;
+    }
+
+    .bag_icon {
+        width: 2em;
+        height: 2em;
+    }
+
+    .center-fit {
+        margin: auto;
+        vertical-align: middle;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    #myLinks {
+        font-size: 14px;
+        line-height: 1.5em;
+        margin-left: 5%;
+        cursor: pointer;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        padding: 2%;
+    }
+
+    .card-image {
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    .card-div-image {
+        align-items: center;
+        vertical-align: center;
+        text-align: center;
+    }
+
+    .card-title {
+        font-size: 16px;
+        font-weight: 800;
+        margin: 1% 2%;
+        padding: 1%;
+        word-wrap: break-word;
+    }
+
+    .card-text {
+        font-size: 12px;
+        text-align: justify;
+        line-height: 1.5em;
+        margin: 1% 2%;
+        padding: 1%;
+        word-wrap: break-word;
+    }
+
+    .card-link {
+        font-size: 12px;
+        text-decoration: none;
+        color: #6cc0bf;
+        margin: 1% 2%;
+        padding: 1%;
+    }
+
+    .footer {
+        text-align: center;
+        align-items: center;
+        vertical-align: middle;
+    }
+
+    .symbol {
+        padding: 5%;
+    }
+
+    .info_links {
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+    }
+
+    .link {
+        padding: 2%;
+        text-decoration: none;
+        color: black;
+        font-weight: 800;
+    }
+
+    .social_medias {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 5% 25%;
+    }
+    
+    .social_button {
+        width: 2em;
+        height: 2em;
+        line-height: 2em;
+        border-radius: 50%;
+        text-align: center;
+        align-items: center;
+        vertical-align: middle;
+        cursor: pointer;
+        background-color: #a7d8db;
+    }
+
+    .madre_infos {
+        color: #767a7f;
+        font-size: 12px;
+    }
+
+    .command_buttons {
+        margin: 2% 5% 2% 5%;
+        padding: 5%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .tezus_logo {
+        padding: 5% 0;
+    }
+
+}
+
+/*For desktops*/
+@media screen and (min-width: 800px) {
+    .hide-desk {
+        display: none;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;    
+    }
+
+    .margins{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .logo-madrejoy {
+        margin: 1% 0;
+        height: 3em;
+    }
+
+    .bag {
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        vertical-align: middle;
+        cursor: pointer;
+        padding: 2px 20px;
+        line-height: 2em;
+        border-radius: 25px;
+        background-color: #efd5d5;
+    }
+
+    .icon_user {
+        margin: auto;
+        text-align: center;
+        align-items: center;
+        vertical-align: middle;
+        cursor: pointer;
+        width: 2em;
+        height: 2em;
+        line-height: 2em;
+        padding: 2px;
+        margin-left: 10px;
+        background-color: #efd5d5;
+        border-radius: 50%;
+    }
+
+    #myLinks ul {
+        margin: 1% 10%;
+        font-size: 12px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+
+    .text-loja {
+        display: block;
+        font-size: 12px;
+        margin-left: 10px;
+    }
+
+    .center-fit-desk {
+        margin: auto;
+        max-width: 100%;
+        max-height: 100%;
+        vertical-align: middle;
+    }
+
+    .command_buttons {
+        margin: 1em 5% 1em 5%;
+        padding: 5%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .card-deck {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+
+    .card {
+        max-width: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        padding: 2%;
+    }
+
+    .card-image {
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    .card-div-image {
+        align-items: center;
+        vertical-align: center;
+        text-align: center;
+        height: 155px;
+    }
+
+    .card-title {
+        text-align: start;
+        font-size: 16px;
+        font-weight: 800;
+        margin: 1% 2%;
+        padding: 1%;
+        word-wrap: break-word;
+    }
+
+    .card-text {
+        font-size: 12px;
+        text-align: justify;
+        line-height: 1.5em;
+        margin: 1% 2%;
+        padding: 1%;
+        word-wrap: break-word;
+    }
+
+    .card-link {
+        font-size: 12px;
+        text-decoration: none;
+        color: #6cc0bf;
+        margin: 1% 2%;
+        padding: 1%;
+    }
+
+    .footer {
+        margin: 0 10%;
+        padding: 5% 0;
+    }
+
+    .media_links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .info_links {
+        width: 80%;
+        line-height: 3em;
+        vertical-align: middle;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .link {
+        margin-left: 5%;
+        text-decoration: none;
+        font-weight: 600;
+        color:black;
+    }
+
+    .social_medias {
+        margin-top: 10px;
+        width: 15%;
+        line-height: 3em;
+        vertical-align: middle;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .social_button {
+        width: 2em;
+        height: 2em;
+        line-height: 2em;
+        border-radius: 50%;
+        text-align: center;
+        align-items: center;
+        vertical-align: middle;
+        cursor: pointer;
+        background-color: #a7d8db;
+    }
+
+    .made_by {
+        margin-top: 4%;
+        display: flex;
+        flex-direction: row;
+        vertical-align: middle;
+        justify-content: space-between;
+    }
+}
+
+.button_incluir {
+    padding: 10px 25px;
+    text-decoration: none;
+    background-color: #6cc0bf;
+    color: white;
+    border-radius: 25px;
+}
+
+.button_see_more {
+    padding: 10px 25px;
+    text-decoration: none;
+    background-color: #e0b1b1;
+    color: white;
+    border-radius: 25px;
+}
+
+/* DIALOG */
+
+.dialogInsertPost {
+    width: 400px;
+    height: 250px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px black;
+}
+
+dialog::backdrop {
+    background-color: cadetblue;
+    opacity: 0.6;
+}
+
+.inputtext {
+    display: block;
+    width: 85%;
+    height: 2em;
+    margin: 2%;
+    padding: 3%;
+}
+
+.div__buttons {
+    margin: 2%;
+}
+
+.button_save {
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #6cc0bf;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.button_clean {
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: burlywood;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.button_close {
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #e0b1b1;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
